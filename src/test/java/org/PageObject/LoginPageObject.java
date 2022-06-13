@@ -11,11 +11,4 @@ public class LoginPageObject {
 	public static WebElement passWord;
 	@FindBy(id="btnLogin")
 	public static WebElement loginButton;
-	
-	
-	
-	
-	
-	
-
 }
