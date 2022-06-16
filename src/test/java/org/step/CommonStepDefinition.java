@@ -21,11 +21,11 @@ public class CommonStepDefinition {
 
 	@Before
 	public void browserlaunch() throws IOException {
-		Common_Utils.loadProperties();
+		Common_Utils.CommonUtilsGetInstance();
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		Common_Utils.initelement();
+		Common_Utils.CommonUtilsGetInstance();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 
 	}
